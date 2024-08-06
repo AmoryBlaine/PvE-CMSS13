@@ -1944,7 +1944,7 @@
 	},
 /obj/item/clothing/under/gimmick/jason{
 	anchored = 1;
-	icon = 'icons/mob/humans/onmob/uniform_1.dmi'
+	icon = 'icons/mob/humans/onmob/uniform-layer/uniform_marine.dmi'
 	},
 /obj/item/clothing/suit/gimmick/jason{
 	anchored = 1

@@ -516,7 +516,7 @@
 	suit_restricted = list(/obj/item/clothing/suit/storage/marine/veteran/bear)
 
 	item_icons = list(
-		WEAR_BODY = 'icons/mob/humans/onmob/uniform_1.dmi',
+		WEAR_BODY = 'icons/mob/humans/onmob/uniform-layer/uniform_marine.dmi',
 	)
 
 /obj/item/clothing/under/marine/veteran/UPP
@@ -1058,7 +1058,7 @@
 	worn_state = "cbrn"
 
 	item_icons = list(
-		WEAR_BODY = 'icons/mob/humans/onmob/uniform_1.dmi',
+		WEAR_BODY = 'icons/mob/humans/onmob/uniform-layer/uniform_marine.dmi',
 	)
 
 
@@ -1084,7 +1084,7 @@
 	actions_types = list(/datum/action/item_action/specialist/toggle_cbrn_hood)
 
 	item_icons = list(
-		WEAR_BODY = 'icons/mob/humans/onmob/uniform_1.dmi',
+		WEAR_BODY = 'icons/mob/humans/onmob/uniform-layer/uniform_marine.dmi',
 	)
 
 	///Whether the hood and gas mask were worn through the hood toggle verb

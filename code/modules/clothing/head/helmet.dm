@@ -380,7 +380,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	valid_accessory_slots = list(ACCESSORY_SLOT_HELM_C)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_HELM_C)
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 
 	var/obj/item/storage/internal/headgear/pockets
@@ -390,7 +390,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	var/storage_max_storage_space = 4
 
 	/// The dmi where the grayscale squad overlays are contained
-	var/helmet_overlay_icon = 'icons/mob/humans/onmob/head_1.dmi'
+	var/helmet_overlay_icon = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 
 	///Any visors built into the helmet
 	var/list/built_in_visors = list(new /obj/item/device/helmet_visor)
@@ -1145,7 +1145,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	icon_state = "upp_cap"
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 	siemens_coefficient = 2
 	flags_armor_protection = BODY_FLAG_HEAD
@@ -1236,7 +1236,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	flags_inventory = NO_FLAGS
 	flags_inv_hide = HIDEEARS|HIDETOPHAIR
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 
 /obj/item/clothing/head/helmet/specrag/New()
@@ -1259,7 +1259,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	flags_inventory = NO_FLAGS
 	flags_inv_hide = HIDEEARS|HIDETOPHAIR
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 
 /obj/item/clothing/head/helmet/skullcap/jungle

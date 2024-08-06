@@ -23,7 +23,7 @@
 	icon_state = "band"
 	flags_inv_hide = HIDETOPHAIR
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 
 /obj/item/clothing/head/cmbandana/Initialize(mapload, ...)
@@ -40,7 +40,7 @@
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	icon_state = "beanie_cargo"
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 
 /obj/item/clothing/head/beanie/green
@@ -58,7 +58,7 @@
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	icon_state = "beret"
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 
 /obj/item/clothing/head/beret/cm/Initialize(mapload, ...)
@@ -116,7 +116,7 @@
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	icon_state = "headband"
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 	flags_obj = OBJ_NO_HELMET_BAND|OBJ_IS_HELMET_GARB
 
@@ -173,7 +173,7 @@
 	icon = 'icons/obj/items/clothing/hats.dmi'
 	icon_state = "headband_rambo"
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_0.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 
 /obj/item/clothing/head/headset
@@ -182,7 +182,7 @@
 	icon_state = "headset"
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 
 /obj/item/clothing/head/cmcap
@@ -242,7 +242,7 @@
 	var/storage_max_w_class = SIZE_TINY
 	var/storage_max_storage_space = 4
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 
 /obj/item/clothing/head/cmcap/Initialize(mapload, ...)
@@ -396,7 +396,7 @@
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	icon_state = "cmohat"
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 
 //============================//BERETS\\=================================\\
@@ -413,7 +413,7 @@
 	desc = "A beret with the USCM Military Police insignia emblazoned on it."
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 	black_market_value = 25
 
@@ -459,7 +459,7 @@
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	icon_state = "coberet"
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 	black_market_value = 30
 
@@ -489,7 +489,7 @@
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	icon_state = "marine_formal"
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 
 /obj/item/clothing/head/marine/peaked/service
@@ -498,7 +498,7 @@
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	icon_state = "marine_service"
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 
 /obj/item/clothing/head/marine/peaked/captain
@@ -507,7 +507,7 @@
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	icon_state = "copeaked"
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 	black_market_value = 30
 
@@ -594,7 +594,7 @@
 	desc = "Worn by officers of special units."
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 	icon_state = "ivan_beret"
 	item_state = "ivan_beret"
@@ -618,7 +618,7 @@
 	desc = "A black cap boldly presenting the acronym 'CMB'. Made using durable fabric, it might stop a very low caliber round from penetrating it, or a stab from piercing it. That isn't to say you won't have a dent in your head."
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 	icon_state = "cmbcap"
 	flags_armor_protection = BODY_FLAG_HEAD
@@ -638,7 +638,7 @@
 	desc = "A sturdy freelancer's cap. More protective than it seems."
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 	icon_state = "freelancer_cap"
 	siemens_coefficient = 2
@@ -665,7 +665,7 @@
 	desc = "A large hood in service with some militias, meant for obscurity on the frontier. Offers some head protection due to the study fibers utilized in production."
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 	icon_state = "rebel_hood"
 	siemens_coefficient = 2
@@ -714,7 +714,7 @@
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	flags_inv_hide = HIDETOPHAIR
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 
 /obj/item/clothing/head/durag/black
@@ -733,7 +733,7 @@
 	icon_state = "drillhat"
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 
 #undef HAT_GARB_RELAY_ICON_STATE
@@ -761,7 +761,7 @@
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	icon_state = "owlf_hood"
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 	item_state = "owlf_hood"
 
@@ -775,7 +775,7 @@
 	item_state = "rmc_beanie"
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 
 /obj/item/clothing/head/beanie/royal_marine/turban
@@ -792,7 +792,7 @@
 	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/head-layer/head_marine.dmi'
 	)
 
 /obj/item/clothing/head/beret/royal_marine/team_leader

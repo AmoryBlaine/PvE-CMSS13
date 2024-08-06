@@ -4,7 +4,7 @@
 	desc = "What the hell is this doing here?"
 	icon = 'icons/obj/items/clothing/cm_suits.dmi'
 	item_icons = list(
-		WEAR_JACKET = 'icons/mob/humans/onmob/suit_1.dmi'
+		WEAR_JACKET = 'icons/mob/humans/onmob/suit-layer/suit_marine.dmi'
 	)
 	sprite_sheets = list(SPECIES_MONKEY = 'icons/mob/humans/species/monkeys/onmob/suit_monkey_1.dmi')
 	blood_overlay_type = "coat"
@@ -192,7 +192,7 @@
 	icon = 'icons/obj/items/clothing/suits.dmi'
 	icon_state = "general_jacket"
 	item_icons = list(
-		WEAR_JACKET = 'icons/mob/humans/onmob/suit_0.dmi'
+		WEAR_JACKET = 'icons/mob/humans/onmob/suit-layer/suit_marine.dmi'
 	)
 	item_state = "general_jacket"
 	has_buttons = FALSE
