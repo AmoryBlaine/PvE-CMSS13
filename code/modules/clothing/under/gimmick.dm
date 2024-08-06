@@ -10,6 +10,7 @@
 	armor_internaldamage = CLOTHING_ARMOR_LOW
 	has_sensor = UNIFORM_NO_SENSORS
 	displays_id = 0
+	icon = 'icons/mob/humans/onmob/uniform-layer/uniform_unorganized.dmi'
 
 //JASON
 /obj/item/clothing/under/gimmick/jason
