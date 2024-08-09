@@ -22,6 +22,7 @@
 	icon = 'icons/mob/humans/onmob/uniform-layer/uniform_civilian.dmi'
 	icon_state = "colonist"
 	worn_state = "colonist"
+	contained_sprite = TRUE
 	has_sensor = UNIFORM_HAS_SENSORS
 	sensor_faction = FACTION_COLONIST
 
@@ -58,13 +59,6 @@
 	icon_state = "workwear_green"
 	worn_state = "workwear_green"
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
-
-/obj/item/clothing/under/colonist/clf
-	name = "\improper Colonial Liberation Front uniform"
-	desc = "A stylish grey-green jumpsuit - standard issue for colonists. This version appears to have the symbol of the Colonial Liberation Front emblazoned in select areas."
-	icon_state = "clf_uniform"
-	worn_state = "clf_uniform"
-	sensor_faction = FACTION_CLF
 
 /obj/item/clothing/under/colonist/prison_boiler
 	name = "\improper prisoner boiler uniform"
@@ -109,6 +103,7 @@
 /obj/item/clothing/under/tshirt
 	name = "T-shirt parent object"
 	icon = 'icons/mob/humans/onmob/uniform-layer/uniform_civilian.dmi'
+	contained_sprite = TRUE
 	has_sensor = UNIFORM_NO_SENSORS
 
 /obj/item/clothing/under/tshirt/w_br
@@ -143,6 +138,7 @@
 	icon = 'icons/mob/humans/onmob/uniform-layer/uniform_civilian.dmi'
 	icon_state = "marshal"
 	worn_state = "marshal"
+	contained_sprite = TRUE
 	armor_melee = CLOTHING_ARMOR_LOW
 	armor_bullet = CLOTHING_ARMOR_LOW
 	armor_laser = CLOTHING_ARMOR_NONE
@@ -159,6 +155,7 @@
 	icon = 'icons/mob/humans/onmob/uniform-layer/uniform_civilian.dmi'
 	icon_state = "liaison_regular"
 	worn_state = "liaison_regular"
+	contained_sprite = TRUE
 
 /obj/item/clothing/under/liaison_suit/charcoal
 	name = "liaison's charcoal suit"

@@ -33,12 +33,10 @@
 /obj/item/clothing/suit/storage/marine
 	name = "\improper M3 pattern marine armor"
 	desc = "Standard USCMC issue M3 Pattern Personal Armor. Composite ballistic armor, integral biomonitoring system, and brackets for the IMP system as well as the TNR Shoulder Lamp. \nHas some extra pouches on the sides for storage."
-	icon = 'icons/obj/items/clothing/cm_suits.dmi'
+	icon = 'icons/mob/humans/onmob/suit-layer/suit_marine.dmi'
 	icon_state = "1"
-	item_state = "marine_armor" //Make unique states for Officer & Intel armors.
-	item_icons = list(
-		WEAR_JACKET = 'icons/mob/humans/onmob/suit-layer/suit_marine.dmi'
-	)
+	item_state = "marine_armor"
+	contained_sprite = TRUE
 	flags_atom = FPRINT|CONDUCT
 	flags_inventory = BLOCKSHARPOBJ
 	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS|BODY_FLAG_LEGS
@@ -139,9 +137,9 @@
 	armor_overlays["lamp"] = null
 	if(flags_marine_armor & ARMOR_LAMP_OVERLAY)
 		if(flags_marine_armor & ARMOR_LAMP_ON)
-			I = image('icons/obj/items/clothing/cm_suits.dmi', src, "lamp-on")
+			I = image('icons/mob/humans/onmob/suit-layer/suit_marine.dmi', src, "lamp-on")
 		else
-			I = image('icons/obj/items/clothing/cm_suits.dmi', src, "lamp-off")
+			I = image('icons/mob/humans/onmob/suit-layer/suit_marine.dmi', src, "lamp-off")
 		armor_overlays["lamp"] = I
 		overlays += I
 	else armor_overlays["lamp"] = null
@@ -444,7 +442,9 @@
 /obj/item/clothing/suit/storage/marine/smartgunner/upp
 	name = "\improper UH7-I heavy plated harness"
 	desc = "An experimental set of heavy armor with additional harnesses designed to support QYJ-72-I smartmachinegun. Heavy plates along with harnesses make wearing backpacks extremely uncomfortable and borderline impossible."
+	icon = 'icons/mob/humans/onmob/suit-layer/suit_upp.dmi'
 	icon_state = "upp_armor_heavy"
+	contained_sprite = TRUE
 	storage_slots = 1
 	slowdown = SLOWDOWN_ARMOR_HEAVY
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
@@ -1075,6 +1075,7 @@
 /obj/item/clothing/suit/storage/marine/veteran/pmc
 	name = "\improper M4 pattern PMC armor"
 	desc = "A modification of the standard Armat Systems M3 armor. Designed for high-profile security operators and corporate mercenaries in mind."
+	icon = 'icons/mob/humans/onmob/suit-layer/suit_weyland.dmi'
 	icon_state = "pmc_armor"
 	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_energy = CLOTHING_ARMOR_MEDIUMLOW
@@ -1314,7 +1315,9 @@
 /obj/item/clothing/suit/storage/marine/faction/UPP
 	name = "\improper UM5 personal armor"
 	desc = "Standard body armor of the UPP military, the UM5 (Union Medium MK5) is a medium body armor, roughly on par with the M3 pattern body armor in service with the USCM, specialized towards ballistics protection. Unlike the M3, however, the plate has a heavier neckplate. This has earned many UA members to refer to UPP soldiers as 'tin men'."
+	icon = 'icons/mob/humans/onmob/suit-layer/suit_upp.dmi'
 	icon_state = "upp_armor"
+	contained_sprite = TRUE
 	armor_bullet = CLOTHING_ARMOR_HIGH
 	armor_energy = CLOTHING_ARMOR_MEDIUM
 	armor_bio = CLOTHING_ARMOR_MEDIUMLOW
@@ -1450,11 +1453,9 @@
 /obj/item/clothing/suit/storage/militia
 	name = "colonial militia hauberk"
 	desc = "The hauberk of a colonist militia member, created from boiled leather and some modern armored plates. While not the most powerful form of armor, and primitive compared to most modern suits of armor, it gives the wearer almost perfect mobility, which suits the needs of the local colonists. It is also quick to don, easy to hide, and cheap to produce in large workshops."
-	icon = 'icons/obj/items/clothing/cm_suits.dmi'
+	icon = 'icons/mob/humans/onmob/suit-layer/suit_upp.dmi'
 	icon_state = "rebel_armor"
-	item_icons = list(
-		WEAR_JACKET = 'icons/mob/humans/onmob/suit-layer/suit_marine.dmi'
-	)
+	contained_sprite = TRUE
 	sprite_sheets = list(SPECIES_MONKEY = 'icons/mob/humans/species/monkeys/onmob/suit_monkey_1.dmi')
 	slowdown = SLOWDOWN_ARMOR_VERY_LIGHT
 	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_LEGS|BODY_FLAG_ARMS
@@ -1532,9 +1533,11 @@
 /obj/item/clothing/suit/storage/CMB
 	name = "\improper CMB Deputy jacket"
 	desc = "A polyster blue bomber jacket enforced with light ballistic weaving. It has a Marshal's Deputy badge pinned to it. The back is enscribed with the word 'DEPUTY'."
+	icon = 'icons/mob/humans/onmob/suit-layer/suit_civilian.dmi'
 	icon_state = "CMB_jacket"
 	item_state = "CMB_jacket"
 	blood_overlay_type = "coat"
+	contained_sprite = TRUE
 	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS
 	flags_cold_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS
 	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
@@ -1589,7 +1592,9 @@
 /obj/item/clothing/suit/storage/RO
 	name = "quartermaster jacket"
 	desc = "A green jacket worn by USCM personnel. The back has the flag of the United Americas on it."
+	icon = 'icons/mob/humans/onmob/suit-layer/suit_marine.dmi'
 	icon_state = "RO_jacket"
+	contained_sprite = TRUE
 	blood_overlay_type = "coat"
 	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_ARMS
 	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND, ACCESSORY_SLOT_DECOR, ACCESSORY_SLOT_MEDAL)
@@ -1805,8 +1810,10 @@
 /obj/item/clothing/suit/storage/marine/veteran/royal_marine
 	name = "kestrel armoured vest"
 	desc = "A customizable personal armor system used by the Three World Empire's Royal Marines Commandos. Designers from a Weyland Yutani subsidary, Lindenthal-Ehrenfeld Militärindustrie, iterated on the USCMC's M3 pattern personal armor in their Tokonigara lab to create an armor systemed to suit the unique needs of the Three World Empire's smaller but better equipped Royal Marines."
+	icon = 'icons/mob/humans/onmob/suit-layer/suit_commando.dmi'
 	icon_state = "rmc_light"
 	item_state = "rmc_light"
+	contained_sprite = TRUE
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
 	allowed = list(
 		/obj/item/weapon/gun,

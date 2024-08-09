@@ -6,6 +6,7 @@
 	icon = 'icons/mob/humans/onmob/uniform-layer/uniform_weyland.dmi'
 	icon_state = "pmc_jumpsuit"
 	worn_state = "pmc_jumpsuit"
+	contained_sprite = TRUE
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 	suit_restricted = list(
@@ -31,16 +32,14 @@
 /obj/item/clothing/under/marine/veteran/pmc/corporate
 	name = "\improper WY corporate security uniform"
 	desc = "An armored uniform worn by Weyland-Yutani corporate security members. This variant is commonly worn by what are known as 'goons'."
-	icon = 'icons/mob/humans/onmob/contained/wy_goons.dmi'
-	icon_state = "uniform"
-	item_state = "uniform"
-	worn_state = "uniform"
-	contained_sprite = TRUE
+	icon_state = "wysec_jumpsuit"
+	item_state = "wysec_jumpsuit"
+	worn_state = "wysec_jumpsuit"
 	item_state_slots = null
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 
 /obj/item/clothing/under/marine/veteran/pmc/corporate/lead
 	desc = "An armored uniform worn by Weyland-Yutani corporate security members. This variant is commonly worn by the lead of the 'goonsquad', as they are colloquially known."
-	icon_state = "lead_uniform"
-	item_state = "lead_uniform"
-	worn_state = "lead_uniform"
+	icon_state = "wysec_lead_jumpsuit"
+	item_state = "wysec_lead_jumpsuit"
+	worn_state = "wysec_lead_jumpsuit"
