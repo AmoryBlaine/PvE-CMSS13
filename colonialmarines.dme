@@ -1588,7 +1588,6 @@
 #include "code\modules\clothing\under\marine_uniform.dm"
 #include "code\modules\clothing\under\miscellaneous.dm"
 #include "code\modules\clothing\under\rank_pins.dm"
-#include "code\modules\clothing\under\shorts.dm"
 #include "code\modules\clothing\under\ties.dm"
 #include "code\modules\clothing\under\under.dm"
 #include "code\modules\clothing\under\upp_uniform.dm"
