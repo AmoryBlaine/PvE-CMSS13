@@ -312,21 +312,21 @@
 	if(HAS_TRAIT(src, TRAIT_INTENT_EYES) && (src.stat != DEAD)) //1st gen synths change eye color based on intent. But not when they're dead.
 		switch(a_intent)
 			if(INTENT_HELP) //Green, defalt
-				r_eyes = 0
-				g_eyes = 255
-				b_eyes = 0
+				r_eyes = 175
+				g_eyes = 186
+				b_eyes = 244
 			if(INTENT_DISARM) //Blue
-				r_eyes = 0
-				g_eyes = 0
-				b_eyes = 255
+				r_eyes = 175
+				g_eyes = 186
+				b_eyes = 244
 			if(INTENT_GRAB) //Orange, since yellow doesn't show at all!
-				r_eyes = 248
-				g_eyes = 243
-				b_eyes = 43
+				r_eyes = 175
+				g_eyes = 186
+				b_eyes = 244
 			if(INTENT_HARM) //RED!
-				r_eyes = 255
-				g_eyes = 0
-				b_eyes = 0
+				r_eyes = 152
+				g_eyes = 80
+				b_eyes = 75
 		update_body()
 
 /mob/living/carbon/human/proc/is_bleeding()
