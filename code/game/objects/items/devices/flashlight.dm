@@ -236,7 +236,9 @@
 	desc = "A desk lamp with an adjustable mount."
 	icon_state = "lamp"
 	item_state = "lamp"
-	light_range = 5
+	light_range = 2.5
+	light_power = 0.5
+	light_color = "#e7c0a4"
 	w_class = SIZE_LARGE
 	on = 0
 	raillight_compatible = 0
@@ -272,13 +274,16 @@
 	desc = "A classic green-shaded desk lamp."
 	icon_state = "lampgreen"
 	item_state = "lampgreen"
-	light_range = 5
+	light_range = 3.5
+	light_power = 0.5
+	light_color = "#e7c0a4"
 
 /obj/item/device/flashlight/lamp/tripod
 	name = "tripod lamp"
 	desc = "An emergency light tube mounted onto a tripod. It seemingly lasts forever."
 	icon_state = "tripod_lamp"
-	light_range = 6//pretty good
+	light_range = 5.5
+	light_power = 0.7
 	w_class = SIZE_LARGE
 	on = 1
 
