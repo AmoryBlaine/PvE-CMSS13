@@ -36,20 +36,20 @@
 	default_ammo = /datum/ammo/bullet/shotgun/buckshot
 
 /obj/item/ammo_magazine/sentry/wy
-	name = "H20 ammo drum (10x42mm Caseless)"
-	desc = "An ammo drum of 200 10x42mm caseless rounds for the WY 202-GMA1 Smart Sentry. Just feed it into the sentry gun's ammo port when its ammo is depleted."
+	name = "H20 ammo drum (10x28mm Caseless)"
+	desc = "An ammo drum of 500 10x28mm caseless rounds for the WY 202-GMA1 Smart Sentry. Just feed it into the sentry gun's ammo port when its ammo is depleted."
 	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/wy.dmi'
 	icon_state = "wy22e5"
-	caliber = "10x42mm"
-	max_rounds = 200
+	max_rounds = 500
 
 /obj/item/ammo_magazine/sentry/wy/mini
-	name = "H16 ammo drum (10x12mm Caseless)"
-	desc = "An ammo drum of 1000 10x12mm caseless rounds for the WY 14-GRA2 Mini Sentry. Just feed it into the sentry gun's ammo port when its ammo is depleted."
+	name = "H16 ammo drum (9x19mm)"
+	desc = "An ammo drum of 120 9x19mm rounds for the WY 14-GRA2 Mini Sentry. Just feed it into the sentry gun's ammo port when its ammo is depleted."
 	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/wy.dmi'
 	icon_state = "wy22e5"
-	caliber = "10x12mm"
-	max_rounds = 1000
+	caliber = "9x19mm"
+	max_rounds = 120
+	default_ammo = /datum/ammo/bullet/pistol
 
 /obj/item/ammo_magazine/sentry/upp
 	name = "SR32 ammo drum (10x32mm Caseless)"

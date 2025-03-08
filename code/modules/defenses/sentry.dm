@@ -17,7 +17,7 @@
 	var/last_fired = 0
 	var/fire_delay = 1
 
-	var/burst_fire_delay = 0.1
+	var/burst_fire_delay = 1.5
 
 	var/immobile = FALSE //Used for prebuilt ones.
 	var/obj/item/ammo_magazine/ammo = new /obj/item/ammo_magazine/sentry
@@ -51,12 +51,12 @@
 
 	/// action list is configurable for all subtypes, this is just an example
 	choice_categories = list(
-		// SENTRY_CATEGORY_ROF = list(ROF_SINGLE, ROF_BURST, ROF_FULL_AUTO),
+		SENTRY_CATEGORY_ROF = list(ROF_SINGLE, ROF_BURST, ROF_FULL_AUTO),
 		SENTRY_CATEGORY_IFF = list(FACTION_MARINE, SENTRY_FACTION_WEYLAND, SENTRY_FACTION_HUMAN, FACTION_UPP),
 	)
 
 	selected_categories = list(
-		// SENTRY_CATEGORY_ROF = ROF_SINGLE,
+		SENTRY_CATEGORY_ROF = ROF_SINGLE,
 		SENTRY_CATEGORY_IFF = FACTION_MARINE,
 	)
 
@@ -819,17 +819,9 @@
 
 /obj/structure/machinery/defenses/sentry/wy
 	name = "WY 202-GMA1 Smart Sentry"
-	desc = "A deployable, fully-automated turret with AI targeting capabilities used by the PMC."
+	desc = "A deployable, semi-automated turret with AI targeting capabilities. Armed with an M30 Autocannon and a 500-round drum magazine."
 	icon = 'icons/obj/structures/machinery/defenses/wy_defenses.dmi'
 	sentry_type = "wy_sentry"
-	fire_delay = 2 SECONDS
-	health = 350
-	health_max = 350
-	damage_mult = 3.5
-	disassemble_time = 5 SECONDS
-	hack_time = 25 SECONDS
-	sentry_range = 6
-	omni_directional = FALSE
 	handheld_type = /obj/item/defenses/handheld/sentry/wy
 	ammo = new /obj/item/ammo_magazine/sentry/wy
 	selected_categories = list(
@@ -838,15 +830,12 @@
 
 /obj/structure/machinery/defenses/sentry/mini/wy
 	name = "WY 14-GRA2 Mini Sentry"
-	desc = "A deployable, semi-automated turret with AI targeting capabilities used by the PMC."
+	desc = "A deployable, semi-automated turret with AI targeting capabilities used by Weyland-Yutani security teams. Chambered for standard 9x19mm cartridges."
 	icon = 'icons/obj/structures/machinery/defenses/wy_defenses.dmi'
 	sentry_type = "wy_sentry"
 	fire_delay = 0.08 SECONDS
 	health = 200
 	health_max = 200
-	damage_mult = 0.3
-	disassemble_time = 2 SECONDS
-	hack_time = 25 SECONDS
 	handheld_type = /obj/item/defenses/handheld/sentry/wy/mini
 	ammo = new /obj/item/ammo_magazine/sentry/wy/mini
 	selected_categories = list(
@@ -854,18 +843,13 @@
 	)
 
 /obj/structure/machinery/defenses/sentry/dmr/wy
-	name = "WY 2-ADT-A3 Heavy Sentry"
-	desc = "A deployable, semi-automated turret with AI targeting capabilities used by the PMC."
-	defense_type = "Heavy"
+	name = "WY 2-ADT-A3 Marksman Sentry"
+	desc = "A deployable, semi-automated turret with AI targeting capabilities. Armed with a modified M30 Autocannon for accuracy at longer range and a 500-round drum magazine."
+	defense_type = "Marksman"
 	icon = 'icons/obj/structures/machinery/defenses/wy_heavy.dmi'
 	sentry_type = "wy_sentry"
-	fire_delay = 4 SECONDS
-	health = 600
-	health_max = 600
-	damage_mult = 5
-	disassemble_time = 10 SECONDS
-	hack_time = 25 SECONDS
-	sentry_range = 8
+	fire_delay = 3.5 SECONDS
+	sentry_range = 12
 	handheld_type = /obj/item/defenses/handheld/sentry/wy
 	ammo = new /obj/item/ammo_magazine/sentry/wy
 	selected_categories = list(
