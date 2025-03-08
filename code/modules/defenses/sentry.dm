@@ -52,11 +52,11 @@
 	/// action list is configurable for all subtypes, this is just an example
 	choice_categories = list(
 		SENTRY_CATEGORY_ROF = list(ROF_SINGLE, ROF_BURST, ROF_FULL_AUTO),
-		SENTRY_CATEGORY_IFF = list(FACTION_MARINE, SENTRY_FACTION_WEYLAND, SENTRY_FACTION_HUMAN, FACTION_UPP),
+		SENTRY_CATEGORY_IFF = list(FACTION_MARINE, SENTRY_FACTION_HUMAN),
 	)
 
 	selected_categories = list(
-		SENTRY_CATEGORY_ROF = ROF_SINGLE,
+		SENTRY_CATEGORY_ROF = ROF_FULL_AUTO,
 		SENTRY_CATEGORY_IFF = FACTION_MARINE,
 	)
 
@@ -187,12 +187,12 @@
 			fire_delay = 4
 		if(ROF_BURST)
 			burst = 3
-			accuracy_mult = 0.6
-			fire_delay = 12
+			accuracy_mult = 0.8
+			fire_delay = 1.5
 		if(ROF_FULL_AUTO)
 			burst = 1
-			accuracy_mult = 0.5
-			fire_delay = 0.5
+			accuracy_mult = 0.7
+			fire_delay = 1.5
 
 /obj/structure/machinery/defenses/sentry/get_examine_text(mob/user)
 	. = ..()
@@ -940,16 +940,31 @@
 /obj/structure/machinery/defenses/sentry/dmr/wy
 	name = "WY 2-ADT-A3 Marksman Sentry"
 	desc = "A deployable, semi-automated turret with AI targeting capabilities. Armed with a modified M30 Autocannon for accuracy at longer range and a 500-round drum magazine."
-	defense_type = "Marksman"
+	defense_type = "Heavy"
 	icon = 'icons/obj/structures/machinery/defenses/wy_heavy.dmi'
 	sentry_type = "wy_sentry"
-	fire_delay = 3.5 SECONDS
 	sentry_range = 12
 	handheld_type = /obj/item/defenses/handheld/sentry/wy
 	ammo = new /obj/item/ammo_magazine/sentry/wy
+	choice_categories = list(
+		SENTRY_CATEGORY_ROF = list(ROF_SINGLE, ROF_BURST),
+		SENTRY_CATEGORY_IFF = list(SENTRY_FACTION_WEYLAND, SENTRY_FACTION_HUMAN, SENTRY_FACTION_COLONY),
+	)
 	selected_categories = list(
+		SENTRY_CATEGORY_ROF = ROF_SINGLE,
 		SENTRY_CATEGORY_IFF = SENTRY_FACTION_WEYLAND,
 	)
+
+/* /obj/structure/machinery/defenses/sentry/dmr/wy/Initialize()
+	. = ..()
+	choice_categories = list(
+		SENTRY_CATEGORY_ROF = list(ROF_SINGLE, ROF_BURST),
+		SENTRY_CATEGORY_IFF = list(SENTRY_FACTION_WEYLAND, SENTRY_FACTION_HUMAN, SENTRY_FACTION_COLONY),
+	)
+	selected_categories = list(
+		SENTRY_CATEGORY_ROF = ROF_SINGLE,
+		SENTRY_CATEGORY_IFF = SENTRY_FACTION_WEYLAND,
+	) */
 
 /obj/structure/machinery/defenses/sentry/upp
 	name = "\improper UPPA 32-H sentry gun"
