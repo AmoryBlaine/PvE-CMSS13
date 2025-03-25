@@ -958,6 +958,9 @@
 		else if(istype(W, /obj/item/shard/shrapnel))
 			var/obj/item/shard/shrapnel/embedded = W
 			embedded.on_embedded_movement(src)
+		else if(istype(W, /obj/item/sharp))
+			var/obj/item/sharp/embedded = W
+			embedded.on_embedded_movement(src)
 		// Check if its a sharp weapon
 		else if(is_sharp(W))
 			if(organ.status & LIMB_SPLINTED) //Splints prevent movement.
@@ -1013,7 +1016,7 @@
 
 	if(job in GLOB.ROLES_USCM)
 		var/dat = GLOB.data_core.get_manifest()
-		show_browser(src, dat, "Crew Manifest", "manifest", "size=400x750")
+		show_browser(src, dat, "Crew Manifest", "manifest", width = 400, height = 750)
 	else
 		to_chat(usr, SPAN_WARNING("You have no access to [MAIN_SHIP_NAME] crew manifest."))
 
@@ -1589,7 +1592,7 @@
 	HTML += "<hr />"
 	HTML +="<a href='byond://?src=\ref[src];flavor_change=done'>\[Done\]</a>"
 	HTML += "<tt>"
-	show_browser(src, HTML, "Update Flavor Text", "flavor_changes", "size=430x300")
+	show_browser(src, HTML, "Update Flavor Text", "flavor_changes", width = 430, height = 300)
 
 /mob/living/carbon/human/throw_item(atom/target)
 	if(!throw_allowed)

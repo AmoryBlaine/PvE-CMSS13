@@ -136,7 +136,7 @@ Also change the icon to reflect the amount of sheets, if possible.*/
 					t1 += " <A href='byond://?src=\ref[src];make=[i];multiplier=[max_multiplier]'>[max_multiplier*R.res_amount]x</A>"
 
 	t1 += "</TT></body></HTML>"
-	show_browser(user, t1, "Construction using [src]", "stack")
+	show_browser(user, t1, "Construction using [src]", "stack", width = 440, height = 500)
 	return
 
 /obj/item/stack/Topic(href, href_list)
@@ -205,6 +205,10 @@ Also change the icon to reflect the amount of sheets, if possible.*/
 
 		if((R.flags & RESULT_REQUIRES_SNOW) && !(istype(usr.loc, /turf/open/snow) || istype(usr.loc, /turf/open/auto_turf/snow)))
 			to_chat(usr, SPAN_WARNING("The [R.title] must be built on snow!"))
+			return
+
+		if((R.flags & CAN_MAKE_BARRICADE) && MODE_HAS_TOGGLEABLE_FLAG(MODE_NO_MAKE_BARRICADES))
+			to_chat(usr, SPAN_WARNING("You can't construct \the [R.title]!"))
 			return
 
 		if(R.time)
