@@ -183,7 +183,6 @@
 
 /obj/structure/gun_rack/m20a/unloaded
 	initial_stored = 5
-	allowed_type = /obj/item/weapon/gun/rifle/m20a/unloaded
 	populate_type = /obj/item/weapon/gun/rifle/m20a/unloaded
 
 /obj/structure/gun_rack/m41/elite
@@ -199,6 +198,7 @@
 
 /obj/structure/gun_rack/m41/elite/unloaded
 	initial_stored = 5
-	allowed_type = /obj/item/weapon/gun/rifle/m41aMK1/elite/unloaded
 	populate_type = /obj/item/weapon/gun/rifle/m41aMK1/elite/unloaded
 
+/obj/structure/gun_rack/m41/elite/unloaded/platoon
+	populate_type = /obj/item/weapon/gun/rifle/m41aMK1/elite/unloaded/platoon

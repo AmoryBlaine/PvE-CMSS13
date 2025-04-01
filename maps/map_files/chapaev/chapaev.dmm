@@ -5013,10 +5013,10 @@
 	},
 /obj/item/ammo_magazine/pkp,
 /obj/item/ammo_magazine/pkp,
-/obj/item/clothing/suit/storage/marine/smartgunner/upp,
 /obj/item/ammo_magazine/pkp,
 /obj/item/ammo_magazine/pkp,
 /obj/item/ammo_magazine/pkp,
+/obj/item/clothing/suit/marine/smartgunner/upp,
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/prep_hallway)
 "ld" = (
@@ -5063,10 +5063,10 @@
 	},
 /obj/item/ammo_magazine/pkp,
 /obj/item/ammo_magazine/pkp,
-/obj/item/clothing/suit/storage/marine/smartgunner/upp,
 /obj/item/ammo_magazine/pkp,
 /obj/item/ammo_magazine/pkp,
 /obj/item/ammo_magazine/pkp,
+/obj/item/clothing/suit/marine/smartgunner/upp,
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/prep_hallway)
 "ll" = (
