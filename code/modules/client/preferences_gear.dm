@@ -385,14 +385,21 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/clothing/head/beret/black
 
 /datum/gear/headwear/cowboy
-	display_name = "Cowboy hat, brown"
+	display_name = "Cowboy hat, Brown"
 	path = /obj/item/clothing/head/cowboy
 
 /datum/gear/headwear/clowboy_light
-	display_name = "Cowboy hat, tan"
+	display_name = "Cowboy hat, Tan"
 	path = /obj/item/clothing/head/cowboy/light
 
-/*
+/datum/gear/headwear/trucker_blue
+	display_name = "Trucker, Blue"
+	path = /obj/item/clothing/head/soft/trucker
+
+/datum/gear/headwear/trucker_red
+	display_name = "Trucker, Red"
+	path = /obj/item/clothing/head/soft/trucker/red
+
 //================================================
 				Helmet Accessories
 //================================================
